@@ -27,7 +27,7 @@ class PriorityQueue:
 
     def _heapify_up(self, index):
         while index > 0:
-            parent_index = (index - 1) // 2         # Tìm vị trí của nút cha.
+            parent_index = (index - 1) // 2         # Tìm vị trí của nút cha. (// python = % C++)
             if self.queue[index] < self.queue[parent_index]:
                 self.queue[index], self.queue[parent_index] = self.queue[parent_index], self.queue[index]
                                                     # Hoán đổi phần tử con với phần tử cha nếu điều kiện thứ tự đống bị vi phạm.
